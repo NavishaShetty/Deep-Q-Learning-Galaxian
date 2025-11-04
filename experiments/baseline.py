@@ -29,7 +29,7 @@ def train_baseline():
     """Run baseline training."""
     
     print("="*60)
-    print("BASELINE DQN TRAINING - SEAQUEST")
+    print("BASELINE DQN TRAINING - GALAXIAN")
     print("="*60)
     
     # Hyperparameters
