@@ -1,2 +1,2 @@
-# Deep-Q-Learning-Seaquest
-Deep Q-Learning agent trained on Atari Seaquest with systematic hyperparameter experiments and comprehensive RL analysis
+# Deep-Q-Learning-Galaxian
+Deep Q-Learning agent trained on Atari Galaxian with systematic hyperparameter experiments and comprehensive RL analysis

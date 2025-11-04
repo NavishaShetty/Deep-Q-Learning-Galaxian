@@ -15,17 +15,17 @@ import numpy as np
 
 class AtariEnvironment:
     """
-    Wrapper for Atari Seaquest environment from Gymnasium.
+    Wrapper for Atari Galaxian environment from Gymnasium.
     
     Provides consistent interface for training DQN agent.
     """
     
-    def __init__(self, game_name="ALE/Seaquest-v5", render_mode=None):
+    def __init__(self, game_name="ALE/Galaxian-v5", render_mode=None):
         """
         Initialize Atari environment.
         
         Args:
-            game_name: Name of Atari game (e.g., "ALE/Seaquest-v5")
+            game_name: Name of Atari game (e.g., "ALE/Galaxian-v5")
             render_mode: Optional rendering mode ('human' for display)
         """
         self.env = gym.make(game_name, render_mode=render_mode)

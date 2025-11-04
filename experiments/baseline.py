@@ -1,5 +1,5 @@
 """
-Baseline DQN Training on Seaquest
+Baseline DQN Training on Galaxian
 
 Trains DQN agent with suggested hyperparameters:
 - total_episodes = 5000
@@ -50,7 +50,7 @@ def train_baseline():
     
     # Initialize environment
     print("Initializing environment...")
-    env = AtariEnvironment(game_name="ALE/Seaquest-v5")
+    env = AtariEnvironment(game_name="ALE/Galaxian-v5")
     state_size = env.get_observation_space()
     action_size = env.get_action_space()
     print(f"State size: {state_size}")

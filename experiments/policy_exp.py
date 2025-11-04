@@ -126,7 +126,7 @@ def train_with_policy(agent_class, agent_name, agent_kwargs, num_episodes=5000, 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
     # Initialize environment
-    env = AtariEnvironment(game_name="ALE/Seaquest-v5")
+    env = AtariEnvironment(game_name="ALE/Galaxian-v5")
     state_size = env.get_observation_space()
     action_size = env.get_action_space()
     

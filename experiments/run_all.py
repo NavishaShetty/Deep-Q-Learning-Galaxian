@@ -43,7 +43,7 @@ def main():
     """Run all experiments."""
     
     print("\n" + "="*70)
-    print("DEEP Q-LEARNING SEAQUEST - FULL EXPERIMENT SUITE")
+    print("DEEP Q-LEARNING GALAXIAN - FULL EXPERIMENT SUITE")
     print("="*70)
     print(f"\nStarting at: {time.strftime('%Y-%m-%d %H:%M:%S')}")
     print("\nThis will run the following experiments in order:")
