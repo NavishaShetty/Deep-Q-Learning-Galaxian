@@ -1,7 +1,7 @@
 """
-Deep Q-Learning Seaquest Agent
+Deep Q-Learning Galaxian Agent
 
-Core modules for DQN implementation on Atari Seaquest.
+Core modules for DQN implementation on Atari Galaxian.
 """
 
 __version__ = "1.0.0"
