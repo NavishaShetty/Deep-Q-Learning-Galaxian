@@ -89,7 +89,7 @@ class QNetwork(nn.Module):
         x = F.relu(self.conv3(x))
         
         # Flatten
-        x = x.view(x.size(0), -1)
+        x = x.reshape(x.size(0), -1)
         
         # Fully connected layers
         x = F.relu(self.fc1(x))
