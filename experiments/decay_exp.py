@@ -97,6 +97,12 @@ def train_with_decay_params(decay_rate, initial_epsilon, experiment_name, num_ep
             print(f"Episode {episode+1:4d}/{num_episodes} | "
                   f"Avg Reward: {avg_reward:7.2f} | "
                   f"Epsilon: {agent.epsilon:.4f}")
+        
+        # Memory cleanup
+        if episode % 100 == 0:
+            import gc
+            gc.collect()
+            torch.cuda.empty_cache()
     
     env.close()
     

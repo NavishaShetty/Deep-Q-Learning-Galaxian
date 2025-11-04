@@ -27,7 +27,7 @@ class ReplayBuffer:
     3. Stabilizes training by sampling from diverse experiences
     """
     
-    def __init__(self, max_size=100000, seed=42):
+    def __init__(self, max_size=10000, seed=42):
         """
         Initialize replay buffer.
         

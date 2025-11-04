@@ -75,7 +75,7 @@ class DQNAgent:
         self.loss_fn = nn.MSELoss()
         
         # Experience replay buffer
-        self.memory = ReplayBuffer(max_size=100000, seed=seed)
+        self.memory = ReplayBuffer(max_size=10000, seed=seed)
         
         # Training parameters
         self.batch_size = 32

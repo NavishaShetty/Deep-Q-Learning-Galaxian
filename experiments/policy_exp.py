@@ -181,6 +181,12 @@ def train_with_policy(agent_class, agent_name, agent_kwargs, num_episodes=5000, 
             avg_reward = metrics.get_moving_average_reward()
             print(f"Episode {episode+1:4d}/{num_episodes} | "
                   f"Avg Reward: {avg_reward:7.2f}")
+            
+        # Memory cleanup
+        if episode % 100 == 0:
+            import gc
+            gc.collect()
+            torch.cuda.empty_cache()
     
     env.close()
     

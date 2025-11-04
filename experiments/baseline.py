@@ -123,6 +123,12 @@ def train_baseline():
                   f"Avg (100 ep): {avg_reward:6.1f} | "
                   f"Length: {episode_length:3d} | "
                   f"Epsilon: {agent.epsilon:.3f}")
+        
+        # Memory cleanup to prevent out-of-memory errors
+        if episode % 100 == 0:
+            import gc
+            gc.collect()  # Clean up Python memory
+            torch.cuda.empty_cache()  # Clear GPU cache
     
     print("-" * 60)
     print("Training complete!\n")

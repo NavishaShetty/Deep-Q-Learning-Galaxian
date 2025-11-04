@@ -97,6 +97,12 @@ def train_with_params(alpha, gamma, experiment_name, num_episodes=5000, max_step
             print(f"Episode {episode+1:4d}/{num_episodes} | "
                   f"Avg Reward: {avg_reward:7.2f} | "
                   f"Epsilon: {agent.epsilon:.3f}")
+        
+        # Memory cleanup
+        if episode % 100 == 0:
+            import gc
+            gc.collect()
+            torch.cuda.empty_cache()
     
     env.close()
     
