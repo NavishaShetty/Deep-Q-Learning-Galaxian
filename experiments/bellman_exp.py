@@ -23,7 +23,7 @@ from src.environment import AtariEnvironment
 from src.utils import MetricsTracker, preprocess_state
 
 
-def train_with_params(alpha, gamma, experiment_name, num_episodes=5000, max_steps=99):
+def train_with_params(alpha, gamma, experiment_name, num_episodes=2000, max_steps=99):
     """
     Train agent with specific Bellman parameters.
     
