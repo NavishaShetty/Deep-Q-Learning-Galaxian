@@ -59,10 +59,10 @@ def main():
     start_time = time.time()
     
     # Experiment 1: Baseline
-    run_command(
-        [sys.executable, "experiments/baseline.py"],
-        "BASELINE TRAINING"
-    )
+    #run_command(
+    #    [sys.executable, "experiments/baseline.py"],
+    #    "BASELINE TRAINING"
+    #)
     
     # Experiment 2: Bellman
     run_command(
