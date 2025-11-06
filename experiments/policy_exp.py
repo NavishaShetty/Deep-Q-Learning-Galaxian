@@ -103,7 +103,7 @@ class UCBAgent(DQNAgent):
         return action
 
 
-def train_with_policy(agent_class, agent_name, agent_kwargs, num_episodes=5000, max_steps=99):
+def train_with_policy(agent_class, agent_name, agent_kwargs, num_episodes=2000, max_steps=99):
     """
     Train agent with specific exploration policy.
     
@@ -256,7 +256,7 @@ def run_policy_experiments():
             agent_class=agent_class,
             agent_name=agent_name,
             agent_kwargs=agent_kwargs,
-            num_episodes=5000,
+            num_episodes=2000,
             max_steps=99
         )
         
