@@ -110,6 +110,9 @@ Default baseline configuration:
 
 ### Visualizations
 
+<img width="4770" height="2955" alt="image" src="https://github.com/user-attachments/assets/3b8f3a85-62f9-4e74-88e9-c537d2d8c140" />
+
+
 - **Overall Comparison**: `overall_comparison.png`
 - **Bellman Experiments**: `bellman_experiments.png`
 - **Decay Experiments**: `decay_experiments.png`
