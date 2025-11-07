@@ -1,0 +1,5 @@
+experiment,decay_rate,initial_epsilon,final_epsilon,final_avg_reward,max_reward,num_episodes
+Slow Decay (0.005),0.005,1.0,0.01004517122287886,60.9,290.0,2000
+Fast Decay (0.02),0.02,1.0,0.010000000000000004,60.3,250.0,2000
+Lower Starting Epsilon (0.5),0.01,0.5,0.010000002061049876,61.5,280.0,2000
+"Standard (0.01, 1.0)",0.01,1.0,0.010000002061049876,62.1,220.0,2000

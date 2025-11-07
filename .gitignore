@@ -57,9 +57,6 @@ env/
 .DS_Store
 
 # Project-specific
-results/
-models/
-*.pt
 *.pth
 checkpoints/
 
@@ -80,4 +77,3 @@ checkpoints/
 
 # Data files
 data/
-*.csv
